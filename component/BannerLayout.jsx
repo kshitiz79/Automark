@@ -8,7 +8,7 @@ const BannerLayout = () => {
                 <div className="relative z-10 sticky top-30 flex flex-wrap -mx-4 bg-white">
                     <div className="w-full md:w-2/3 lg:w-1/2 px-4 xl:px-0">
                         <div className="mb-12 group">
-                            <h2 className="text-blue-600 font-semibold tracking-wide uppercase mb-3">
+                            <h2 className="font-semibold tracking-wide uppercase mb-3" style={{ color: '#164f78' }}>
                                 IRDAI Registered Composite Broker
                             </h2>
                             <h3 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-8 text-gray-900 leading-tight">
@@ -16,7 +16,7 @@ const BannerLayout = () => {
                             </h3>
                             <a
                                 href="#contact"
-                                className="inline-flex items-center text-gray-900 hover:text-blue-600 transition-colors duration-300"
+                                className="inline-flex items-center text-gray-900 transition-colors duration-300 hover:text-[#164f78]"
                             >
                                 <svg
                                     className="w-16 h-16 transform transition-transform group-hover:-translate-y-2 group-hover:translate-x-2"
@@ -34,7 +34,7 @@ const BannerLayout = () => {
                 </div>
 
                 {/* Bottom Content Section */}
-                <div className="flex relative z-10 flex-wrap -mx-4">
+                <div className="flex relative z-10 flex-wrap -mx-4 z-20 relative">
                     <div className="w-full lg:w-1/2 px-4 lg:ml-[50%]">
                         <div className="mb-8">
                             <p className="font-bold text-gray-800 mb-8 text-xl leading-relaxed">
@@ -67,7 +67,7 @@ const BannerLayout = () => {
                                             { value: "10+", label: "Years of Expertise" },
                                         ].map((stat) => (
                                             <div key={stat.label}>
-                                                <div className="text-3xl font-black text-blue-600">{stat.value}</div>
+                                                <div className="text-3xl font-black" style={{ color: '#164f78' }}>{stat.value}</div>
                                                 <div className="text-sm text-gray-500 mt-1">{stat.label}</div>
                                             </div>
                                         ))}
@@ -79,9 +79,9 @@ const BannerLayout = () => {
                             </div>
 
                             <div className="w-full sm:w-5/12 px-4 mt-8 sm:mt-0">
-                                <div className="border-t-4 border-blue-600 pt-8 sticky top-32">
-                                    <div className="w-12 h-12 rounded-full bg-blue-50 text-blue-600 flex items-center justify-center mb-6">
-                                        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <div className="pt-8 sticky top-32 border-t-4" style={{ borderColor: '#164f78' }}>
+                                    <div className="w-12 h-12 rounded-full flex items-center justify-center mb-6" style={{ backgroundColor: '#eef5fb', color: '#164f78' }}>
+                                        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
                                         </svg>
                                     </div>
@@ -91,7 +91,8 @@ const BannerLayout = () => {
                                     <div className="flex flex-col gap-3">
                                         <a
                                             href="#contact"
-                                            className="inline-flex items-center justify-center px-8 py-4 text-base font-bold rounded text-white bg-blue-600 hover:bg-gray-900 transition-colors duration-300 group w-full sm:w-auto"
+                                            className="inline-flex items-center justify-center px-8 py-4 text-base font-bold rounded text-white transition-colors duration-300 group w-full sm:w-auto hover:opacity-90"
+                                            style={{ backgroundColor: '#164f78' }}
                                         >
                                             <span className="mr-3">Get Free Quote</span>
                                             <svg
@@ -107,7 +108,7 @@ const BannerLayout = () => {
                                         </a>
                                         <a
                                             href="#services"
-                                            className="inline-flex items-center justify-center px-8 py-4 text-base font-bold rounded border-2 border-gray-300 text-gray-700 hover:border-blue-600 hover:text-blue-600 transition-colors duration-300 w-full sm:w-auto"
+                                            className="inline-flex items-center justify-center px-8 py-4 text-base font-bold rounded border-2 border-gray-300 text-gray-700 transition-colors duration-300 w-full sm:w-auto hover:border-[#164f78] hover:text-[#164f78]"
                                         >
                                             Explore Services
                                         </a>

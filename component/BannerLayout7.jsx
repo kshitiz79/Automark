@@ -25,11 +25,14 @@ const BannerLayout7 = () => {
     return (
         <section
             id="why-us"
-            className="relative py-24 bg-gray-900 bg-cover bg-center bg-fixed overflow-visible"
-            style={{ backgroundImage: "url('/assets/images/banners/13.webp')" }}
+            className="relative py-24 bg-cover bg-center bg-fixed overflow-visible"
+            style={{
+                backgroundImage: "url('/assets/images/banners/13.webp')",
+                backgroundColor: '#072e49'
+            }}
         >
-            {/* Dark Overlay */}
-            <div className="absolute inset-0 bg-black/65 z-0"></div>
+            {/* Dark navy overlay */}
+            <div className="absolute inset-0 z-0" style={{ backgroundColor: 'rgba(7,46,73,0.82)' }}></div>
 
             <div className="container mx-auto px-4 relative z-10">
                 <div className="flex flex-wrap -mx-4">
@@ -37,7 +40,7 @@ const BannerLayout7 = () => {
                     {/* Left Side (Sticky Header) */}
                     <div className="w-full lg:w-1/2 px-4 mb-16 lg:mb-0">
                         <div className="sticky top-32">
-                            <h2 className="text-blue-400 font-semibold tracking-widest uppercase mb-4 text-sm sm:text-base">
+                            <h2 className="font-semibold tracking-widest uppercase mb-4 text-sm sm:text-base" style={{ color: '#7ab5dc' }}>
                                 Why Choose Us
                             </h2>
                             <h3 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight">
@@ -48,10 +51,15 @@ const BannerLayout7 = () => {
 
                     {/* Right Side (Sticky Scrolling Content) */}
                     <div className="w-full lg:w-1/2 px-4 relative">
-                        {/* Banner text block - also sticky */}
+                        {/* Banner text block */}
                         <div
-                            className="sticky backdrop-blur-md bg-white/10 p-8 sm:p-10 rounded-2xl border border-white/10 mb-8 shadow-2xl"
-                            style={{ top: '8rem', zIndex: 10 }}
+                            className="sticky backdrop-blur-md p-8 sm:p-10 rounded-2xl border mb-8 shadow-2xl"
+                            style={{
+                                top: '8rem',
+                                zIndex: 10,
+                                backgroundColor: 'rgba(22,79,120,0.25)',
+                                borderColor: 'rgba(122,181,220,0.2)'
+                            }}
                         >
                             <h4 className="text-xl md:text-2xl font-bold text-white mb-6 leading-snug">
                                 As an independent composite broker, we work with 50+ insurers — recommending what's best for you, not what pays us more. Our only obligation is to you.
@@ -88,9 +96,12 @@ const BannerLayout7 = () => {
                                                 className="w-24 h-24 rounded-full object-cover border-4 border-white shadow-lg"
                                                 loading="lazy"
                                             />
-                                            <div className="absolute -bottom-2 -right-2 w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center text-white border-2 border-white shadow-md">
-                                                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                                            <div
+                                                className="absolute -bottom-2 -right-2 w-10 h-10 rounded-full flex items-center justify-center text-white border-2 border-white shadow-md"
+                                                style={{ backgroundColor: '#164f78' }}
+                                            >
+                                                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
                                                 </svg>
                                             </div>
                                         </div>

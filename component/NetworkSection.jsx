@@ -1,3 +1,4 @@
+"use client";
 import React from 'react';
 
 const insurers = [
@@ -33,7 +34,7 @@ export default function NetworkSection() {
       <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-2xl mx-auto mb-12">
-            <p className="text-blue-600 font-semibold uppercase tracking-widest text-sm mb-3">Our Network</p>
+            <p className="font-semibold uppercase tracking-widest text-sm mb-3" style={{ color: '#164f78' }}>Our Network</p>
             <h2 className="text-3xl sm:text-4xl font-black text-gray-900 mb-4">
               50+ Insurer Partnerships
             </h2>
@@ -46,7 +47,9 @@ export default function NetworkSection() {
             {insurers.map((name) => (
               <span
                 key={name}
-                className="px-5 py-2.5 bg-white border border-gray-200 rounded-full text-sm font-semibold text-gray-700 hover:border-blue-300 hover:text-blue-600 transition-colors shadow-sm"
+                className="px-5 py-2.5 bg-white border border-gray-200 rounded-full text-sm font-semibold text-gray-700 shadow-sm transition-colors cursor-default"
+                onMouseEnter={e => { e.currentTarget.style.borderColor = '#164f78'; e.currentTarget.style.color = '#164f78'; }}
+                onMouseLeave={e => { e.currentTarget.style.borderColor = ''; e.currentTarget.style.color = ''; }}
               >
                 {name}
               </span>
@@ -62,7 +65,7 @@ export default function NetworkSection() {
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-xl mx-auto mb-12">
-            <p className="text-blue-600 font-semibold uppercase tracking-widest text-sm mb-3">Client Stories</p>
+            <p className="font-semibold uppercase tracking-widest text-sm mb-3" style={{ color: '#164f78' }}>Client Stories</p>
             <h2 className="text-3xl sm:text-4xl font-black text-gray-900">
               What Our Clients Say
             </h2>

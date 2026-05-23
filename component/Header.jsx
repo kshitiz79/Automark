@@ -15,27 +15,13 @@ function Header() {
 
   return (
     <header className="sticky top-0 z-50 w-full bg-white shadow-sm">
-      {/* Top bar */}
-      <div className="bg-blue-700 text-white text-xs py-1.5 px-4 flex flex-wrap justify-between items-center gap-1">
-        <span>IRDAI Registered Composite Broker</span>
-        <div className="flex gap-4">
-          <a href="mailto:care@automarkimf.com" className="hover:underline">care@automarkimf.com</a>
-          <a href="mailto:claims@automarkimf.com" className="hover:underline">claims@automarkimf.com</a>
-          <a href="tel:+919278190900" className="hover:underline">+91 92781 90900</a>
-        </div>
-      </div>
+      {/* Top bar — dark navy */}
 
       <nav className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <a href="/" className="flex items-center gap-2">
-            <div className="w-9 h-9 bg-blue-600 rounded-lg flex items-center justify-center">
-              <span className="text-white font-black text-lg">A</span>
-            </div>
-            <div>
-              <span className="text-lg font-black text-gray-900 leading-none block">Automark</span>
-              <span className="text-xs text-blue-600 font-semibold tracking-widest uppercase leading-none">Services</span>
-            </div>
+            <img src="logo.png" alt="logo" width="100px" height="100px" />
           </a>
 
           {/* Desktop Nav */}
@@ -44,7 +30,7 @@ function Header() {
               <a
                 key={link.title}
                 href={link.href}
-                className="text-sm font-medium text-gray-700 hover:text-blue-600 transition-colors"
+                className="text-sm font-medium text-gray-700 transition-colors hover:text-[#164f78]"
               >
                 {link.title}
               </a>
@@ -55,7 +41,8 @@ function Header() {
           <div className="hidden lg:flex items-center gap-3">
             <a
               href="#contact"
-              className="inline-flex items-center px-5 py-2.5 text-sm font-semibold text-white bg-blue-600 rounded-full hover:bg-blue-700 transition-colors shadow"
+              className="inline-flex items-center px-5 py-2.5 text-sm font-semibold text-white rounded-full shadow transition-opacity hover:opacity-90"
+              style={{ backgroundColor: '#164f78' }}
             >
               Get Free Quote
               <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -86,14 +73,15 @@ function Header() {
                   key={link.title}
                   href={link.href}
                   onClick={() => setIsMobileMenuOpen(false)}
-                  className="px-3 py-2 text-sm font-medium text-gray-700 hover:text-blue-600 hover:bg-blue-50 rounded-md"
+                  className="px-3 py-2 text-sm font-medium text-gray-700 rounded-md hover:text-[#164f78] hover:bg-brand-50"
                 >
                   {link.title}
                 </a>
               ))}
               <a
                 href="#contact"
-                className="mt-2 mx-3 text-center px-5 py-2.5 text-sm font-semibold text-white bg-blue-600 rounded-full hover:bg-blue-700"
+                className="mt-2 mx-3 text-center px-5 py-2.5 text-sm font-semibold text-white rounded-full"
+                style={{ backgroundColor: '#164f78' }}
               >
                 Get Free Quote
               </a>

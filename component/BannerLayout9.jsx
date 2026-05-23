@@ -1,3 +1,4 @@
+"use client";
 import React from 'react';
 
 const cards = [
@@ -7,7 +8,7 @@ const cards = [
         features: [
             {
                 icon: (
-                    <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
                     </svg>
                 ),
@@ -16,7 +17,7 @@ const cards = [
             },
             {
                 icon: (
-                    <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
                     </svg>
                 ),
@@ -34,7 +35,7 @@ const cards = [
         features: [
             {
                 icon: (
-                    <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 17a2 2 0 11-4 0 2 2 0 014 0zM19 17a2 2 0 11-4 0 2 2 0 014 0zM13 16V6a1 1 0 00-1-1H4a1 1 0 00-1 1v10l2 2h8l2-2z" />
                     </svg>
                 ),
@@ -43,7 +44,7 @@ const cards = [
             },
             {
                 icon: (
-                    <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
                     </svg>
                 ),
@@ -61,7 +62,7 @@ const cards = [
         features: [
             {
                 icon: (
-                    <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
                     </svg>
                 ),
@@ -70,7 +71,7 @@ const cards = [
             },
             {
                 icon: (
-                    <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
                     </svg>
                 ),
@@ -101,15 +102,16 @@ const CircularProgress = ({ percentage }) => {
                     fill="transparent"
                 />
                 <circle
-                    className="text-blue-600 stroke-current transition-all duration-1000 ease-in-out"
                     strokeWidth="8"
                     strokeLinecap="round"
                     cx="50"
                     cy="50"
                     r={radius}
                     fill="transparent"
+                    stroke="#164f78"
                     strokeDasharray={circumference}
                     strokeDashoffset={offset}
+                    className="transition-all duration-1000 ease-in-out"
                 />
             </svg>
             <div className="absolute inset-0 flex items-center justify-center">
@@ -127,7 +129,7 @@ const BannerLayout9 = () => {
                 <div className="flex flex-wrap -mx-4 items-center mb-16">
                     <div className="w-full lg:w-7/12 px-4 mb-8 lg:mb-0">
                         <div className="mb-6">
-                            <h2 className="text-blue-600 font-semibold tracking-wide uppercase mb-3">
+                            <h2 className="font-semibold tracking-wide uppercase mb-3" style={{ color: '#164f78' }}>
                                 What We Offer
                             </h2>
                             <h3 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
@@ -141,7 +143,7 @@ const BannerLayout9 = () => {
                         </div>
                         <a
                             href="#contact"
-                            className="inline-flex items-center text-gray-900 hover:text-blue-600 transition-colors duration-300 group"
+                            className="inline-flex items-center text-gray-900 transition-colors duration-300 group hover:text-[#164f78]"
                         >
                             <svg
                                 className="w-14 h-14 transform transition-transform group-hover:-translate-y-1 group-hover:translate-x-1"
@@ -173,7 +175,7 @@ const BannerLayout9 = () => {
                                 <div className="flex flex-wrap -mx-4">
                                     <div className="w-full lg:w-1/2 px-4 mb-10 lg:mb-0">
                                         <div className="flex mb-8">
-                                            <div className="text-blue-600 mr-4 mt-1 hidden sm:block">
+                                            <div className="mr-4 mt-1 hidden sm:block" style={{ color: '#164f78' }}>
                                                 <svg className="w-12 h-12" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="m56 6h-48c-1.104 0-2 .896-2 2s.896 2 2 2h43.171l-44.585 44.586c-.781.781-.781 2.047 0 2.828.391.391.902.586 1.414.586s1.024-.195 1.414-.586l44.586-44.586v43.172c0 1.104.896 2 2 2s2-.896 2-2v-48c0-1.104-.896-2-2-2z" fill="currentColor" />
                                                 </svg>
@@ -185,8 +187,14 @@ const BannerLayout9 = () => {
 
                                         <div className="grid sm:grid-cols-2 gap-8 mb-10">
                                             {card.features.map((feature, fIndex) => (
-                                                <div key={fIndex} className="bg-gray-50 rounded-xl p-6 hover:bg-blue-50 transition-colors duration-300">
-                                                    <div className="text-blue-600 mb-4 bg-white w-14 h-14 rounded-full flex items-center justify-center shadow-sm">
+                                                <div
+                                                    key={fIndex}
+                                                    className="bg-gray-50 rounded-xl p-6 transition-colors duration-300"
+                                                    style={{ '--hover-bg': '#eef5fb' }}
+                                                    onMouseEnter={e => e.currentTarget.style.backgroundColor = '#eef5fb'}
+                                                    onMouseLeave={e => e.currentTarget.style.backgroundColor = ''}
+                                                >
+                                                    <div className="mb-4 bg-white w-14 h-14 rounded-full flex items-center justify-center shadow-sm" style={{ color: '#164f78' }}>
                                                         {feature.icon}
                                                     </div>
                                                     <h5 className="text-xl font-bold text-gray-900 mb-3">{feature.title}</h5>
@@ -196,7 +204,11 @@ const BannerLayout9 = () => {
                                         </div>
 
                                         <div className="flex flex-wrap items-center gap-4">
-                                            <a href="#contact" className="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded text-white bg-blue-600 hover:bg-gray-900 transition-colors duration-300 group">
+                                            <a
+                                                href="#contact"
+                                                className="inline-flex items-center justify-center px-6 py-3 text-base font-medium rounded text-white transition-colors duration-300 group hover:opacity-90"
+                                                style={{ backgroundColor: '#164f78' }}
+                                            >
                                                 <span className="mr-2">Get Free Quote</span>
                                                 <svg className="w-3 h-3 transform transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="m56 6h-48c-1.104 0-2 .896-2 2s.896 2 2 2h43.171l-44.585 44.586c-.781.781-.781 2.047 0 2.828.391.391.902.586 1.414.586s1.024-.195 1.414-.586l44.586-44.586v43.172c0 1.104.896 2 2 2s2-.896 2-2v-48c0-1.104-.896-2-2-2z" fill="currentColor" />
@@ -215,7 +227,6 @@ const BannerLayout9 = () => {
                                                 alt={card.title}
                                                 className="absolute inset-0 w-full h-full object-cover rounded-2xl"
                                             />
-                                            {/* Overlay card with progress circle */}
                                             <div className="absolute bottom-6 left-6 right-6 sm:bottom-10 sm:left-10 sm:right-auto sm:w-80 bg-white/95 backdrop-blur-sm rounded-xl p-6 shadow-2xl flex flex-col sm:flex-row items-center sm:items-start gap-6 transform hover:-translate-y-2 transition-transform duration-300">
                                                 <CircularProgress percentage={card.progress} />
                                                 <p className="text-gray-700 text-sm font-medium leading-relaxed text-center sm:text-left">
