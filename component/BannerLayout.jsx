@@ -5,7 +5,7 @@ const BannerLayout = () => {
         <section className="banner-layout8 py-20 relative overflow-visible bg-white">
             <div className="container mx-auto px-4">
                 {/* Top Sticky Header Section */}
-                <div className="relative z-10 sticky top-30 flex flex-wrap -mx-4 bg-white">
+                <div className="relative z-10 lg:sticky lg:top-30 flex flex-wrap -mx-4 bg-white">
                     <div className="w-full md:w-2/3 lg:w-1/2 px-4 xl:px-0">
                         <div className="mb-12 group">
                             <h2 className="font-semibold tracking-wide uppercase mb-3" style={{ color: '#164f78' }}>
@@ -64,7 +64,7 @@ const BannerLayout = () => {
                                             { value: "50+", label: "Insurance Partners" },
                                             { value: "2M+", label: "Policies Managed" },
                                             { value: "24/7", label: "Claims Support" },
-                                            { value: "10+", label: "Years of Expertise" },
+                                            { value: "15+", label: "Years of Expertise" },
                                         ].map((stat) => (
                                             <div key={stat.label}>
                                                 <div className="text-3xl font-black" style={{ color: '#164f78' }}>{stat.value}</div>
@@ -79,7 +79,7 @@ const BannerLayout = () => {
                             </div>
 
                             <div className="w-full sm:w-5/12 px-4 mt-8 sm:mt-0">
-                                <div className="pt-8 sticky top-32 border-t-4" style={{ borderColor: '#164f78' }}>
+                                <div className="pt-8 lg:sticky lg:top-32 border-t-4" style={{ borderColor: '#164f78' }}>
                                     <div className="w-12 h-12 rounded-full flex items-center justify-center mb-6" style={{ backgroundColor: '#eef5fb', color: '#164f78' }}>
                                         <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />

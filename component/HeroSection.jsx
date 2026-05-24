@@ -4,7 +4,7 @@ const stats = [
   { value: "50+", label: "Insurance Partners" },
   { value: "2M+", label: "Policies Managed" },
   { value: "24/7", label: "Claims Support" },
-  { value: "10+", label: "Years of Expertise" },
+  { value: "15+", label: "Years of Expertise" },
 ];
 
 const partners = ["LIC", "HDFC Ergo", "TATA AIG", "ICICI Lombard", "SBI Life", "Bajaj Allianz", "New India"];

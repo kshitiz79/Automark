@@ -39,7 +39,7 @@ const BannerLayout7 = () => {
 
                     {/* Left Side (Sticky Header) */}
                     <div className="w-full lg:w-1/2 px-4 mb-16 lg:mb-0">
-                        <div className="sticky top-32">
+                        <div className="lg:sticky lg:top-32">
                             <h2 className="font-semibold tracking-widest uppercase mb-4 text-sm sm:text-base" style={{ color: '#7ab5dc' }}>
                                 Why Choose Us
                             </h2>
@@ -53,7 +53,7 @@ const BannerLayout7 = () => {
                     <div className="w-full lg:w-1/2 px-4 relative">
                         {/* Banner text block */}
                         <div
-                            className="sticky backdrop-blur-md p-8 sm:p-10 rounded-2xl border mb-8 shadow-2xl"
+                            className="lg:sticky backdrop-blur-md p-8 sm:p-10 rounded-2xl border mb-8 shadow-2xl"
                             style={{
                                 top: '8rem',
                                 zIndex: 10,
@@ -74,7 +74,7 @@ const BannerLayout7 = () => {
                             {cards.map((card, index) => (
                                 <div
                                     key={index}
-                                    className="sticky bg-white rounded-2xl shadow-xl p-8 sm:p-10 border border-gray-100 transition-all duration-300 hover:shadow-2xl hover:-translate-y-1"
+                                    className="lg:sticky bg-white rounded-2xl shadow-xl p-8 sm:p-10 border border-gray-100 transition-all duration-300 hover:shadow-2xl hover:-translate-y-1"
                                     style={{
                                         top: `${200 + (index * 40)}px`,
                                         zIndex: 20 + index

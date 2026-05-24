@@ -164,7 +164,7 @@ const BannerLayout9 = () => {
                     {cards.map((card, index) => (
                         <div
                             key={index}
-                            className="sticky bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-100"
+                            className="lg:sticky bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-100"
                             style={{ top: `${100 + (index * 30)}px`, zIndex: index + 10 }}
                         >
                             <div className="p-8 lg:p-12">
